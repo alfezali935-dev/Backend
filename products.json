@@ -108,15 +108,15 @@
     },
     {
       "id": 10,
-      "name": "Noise-Cancelling Earbuds",
+      "name": "कुरकुरे स्टिक्स",
       "category": "Audio",
-      "title": "Noise-Cancelling Earbuds",
+      "title": "कुरकुरे स्टिक्स",
       "brand": "QuietBeats",
-      "price": 79.99,
-      "originalPrice": 129.99,
-      "discount": "38% OFF",
+      "price": 10,
+      "originalPrice": 10,
+      "discount": "0% OFF",
       "description": "Compact true wireless earbuds with active noise cancellation and wireless charging case.",
-      "image": "https://images.pexels.com/photos/1442446/pexels-photo-1442446.jpeg"
+      "image": "https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/NI_CATALOG/IMAGES/ciw/2025/12/17/fe847333-21d7-484f-b487-97f1ea3fb671_96U1P3NOWI_MN_17122025.png"
     },
     {
       "id": 11,
