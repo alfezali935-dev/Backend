@@ -39,7 +39,7 @@ const CartItem = mongoose.model('CartItem', cartItemSchema);
 // });
 
 // API Route to get products
-app.get('https://backen-lxzm.onrender.com/api', async (req, res) => {
+app.get('/api/products', async (req, res) => {
   try {
     // Asynchronous file read
     const data = await fs.readFile(productsFilePath, 'utf8');
@@ -52,7 +52,7 @@ app.get('https://backen-lxzm.onrender.com/api', async (req, res) => {
 });
 
 // API Route to save cart
-app.post('https://backen-lxzm.onrender.com/cart', async (req, res) => {
+app.post('/api/cart', async (req, res) => {
   const { mobile, items } = req.body;
 
   if (!mobile || !items || !Array.isArray(items)) {
