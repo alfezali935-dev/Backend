@@ -73,5 +73,5 @@ app.post('https://backen-lxzm.onrender.com/cart', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 'https://backen-lxzm.onrender.com';
-app.listen(PORT, () => console.log(`Server running on ${PORT}`));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
