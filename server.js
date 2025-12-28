@@ -39,7 +39,7 @@ const CartItem = mongoose.model('CartItem', cartItemSchema);
 // });
 
 // API Route to get products
-app.get('https://backen-lxzm.onrender.com', async (req, res) => {
+app.get('https://backen-lxzm.onrender.com/api', async (req, res) => {
   try {
     // Asynchronous file read
     const data = await fs.readFile(productsFilePath, 'utf8');
