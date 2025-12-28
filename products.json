@@ -9,8 +9,7 @@
         "title": "Premium Wireless Headphones",
         "originalPrice": 199.99,
         "discount": "35% OFF",
-        "image": "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/324cb72c-0e9f-44ff-8fc6-953303d5c62e.png"
-    },
+  "image": "https://images.pexels.com/photos/39284/pexels-photo-39284.jpeg"    },
     {
         "id": 2,
         "name": "Flagship Smartphone",
@@ -21,8 +20,8 @@
         "originalPrice": 899.99,
         "discount": "33% OFF",
         "description": "Experience crystal-clear sound with our premium wireless headphones. Featuring active noise cancellation, 30-hour battery life, and comfortable over-ear design. Perfect for music lovers and professionals who demand quality audio.",
-        "image": "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/324cb72c-0e9f-44ff-8fc6-953303d5c62e.png"
-    },
+        "image": "https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg"    },
+  
     {
         "id": 3,
         "name": "Classic Leather Watch",
@@ -33,7 +32,7 @@
         "originalPrice": 149.99,
         "discount": "33% OFF",
         "description": "Track your fitness goals with our advanced smartwatch. Monitor heart rate, steps, sleep quality, and more. Water-resistant design with 7-day battery life and smartphone notifications.",
-        "image": "https://placehold.co/800x600"
+        "image": "https://images.pexels.com/photos/110857/pexels-photo-110857.jpeg"
     },
     {
         "id": 4,
@@ -45,7 +44,7 @@
         "originalPrice": 1299.99,
         "discount": "41% OFF",
         "description": "Never run out of power with our 20000mAh portable charger. Featuring dual USB ports for fast charging, LED indicator, and compact rugged design. Charges most smartphones 5-7 times.",
-        "image": "https://placehold.co/800x600"
+        "image": "https://images.pexels.com/photos/45170/pexels-photo-45170.jpeg"
     },
     {
         "id": 5,
@@ -57,7 +56,7 @@
         "originalPrice": 149.99,
         "discount": "40% OFF",
         "description": "Track your fitness goals with our advanced smartwatch. Monitor heart rate, steps, sleep quality, and more. Water-resistant design with 7-day battery life and smartphone notifications.",
-        "image": "https://placehold.co/800x600"
+        "image": "https://images.pexels.com/photos/1192337/pexels-photo-1192337.jpeg"
     },
     {
         "id": 6,
@@ -69,7 +68,7 @@
         "originalPrice": 59.99,
         "discount": "41% OFF",
         "description": "Never run out of power with our 20000mAh portable charger. Featuring dual USB ports for fast charging, LED indicator, and compact rugged design. Charges most smartphones 5-7 times.",
-        "image": "https://placehold.co/800x600"
+        "image": "https://images.pexels.com/photos/1158956/pexels-photo-1158956.jpeg"
     },
     {
         "id": 7,
@@ -81,7 +80,7 @@
         "originalPrice": 39.99,
         "discount": "37% OFF",
         "description": "Designed for comfort during extended use, our ergonomic mouse reduces wrist strain. Wireless connectivity with precise optical tracking and customizable buttons.",
-        "image": "https://placehold.co/800x600"
+        "image": "https://images.pexels.com/photos/716398/pexels-photo-716398.jpeg"
     },
     {
         "id": 8,
@@ -93,7 +92,7 @@
         "originalPrice": 89.99,
         "discount": "33% OFF",
         "description": "Take your music anywhere with our rugged waterproof speaker. IP67 rated against water and dust, with 20W powerful sound and 15-hour battery life.",
-        "image": "https://placehold.co/800x600"
+        "image": "https://images.pexels.com/photos/2835438/pexels-photo-2835438.jpeg"
     },
     {
         "id": 9,
@@ -105,7 +104,7 @@
         "originalPrice": 79.99,
         "discount": "37% OFF",
         "description": "Eliminate 99.9% of germs with our UV sanitizer. Works with smartphones, earphones, and other small items in just 5 minutes. Safe for all phone materials.",
-        "image": "https://placehold.co/800x600"
+        "image": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg"
     },
     {
       "id": 10,
@@ -117,7 +116,7 @@
       "originalPrice": 129.99,
       "discount": "38% OFF",
       "description": "Compact true wireless earbuds with active noise cancellation and wireless charging case.",
-      "image": "https://placehold.co/800x600"
+      "image": "https://images.pexels.com/photos/1442446/pexels-photo-1442446.jpeg"
     },
     {
       "id": 11,
