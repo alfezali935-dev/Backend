@@ -5,6 +5,12 @@ const path = require('path');
 const mongoose = require('mongoose');
 const app = express();
 
+// Twilio Configuration from userController.js
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const twilio = require('twilio');
+const client = twilio(accountSid, authToken);
+
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -34,9 +40,9 @@ const cartItemSchema = new mongoose.Schema({
 const CartItem = mongoose.model('CartItem', cartItemSchema);
 
 // API Route for the root URL to show a welcome message
-// app.get('/', (req, res) => {
-//   res.send('<h1>Welcome to the ShopCart API!</h1><p>Visit <a href="/api/products">/api/products</a> to see the product data.</p>');
-// });
+app.get('/', (req, res) => {
+  res.send('<h1>Welcome to the ShopCart API!</h1><p>Visit <a href="/api/products">/api/products</a> to see the product data.</p>');
+});
 
 // API Route to get products
 app.get('/api/products', async (req, res) => {
@@ -65,7 +71,19 @@ app.post('/api/cart', async (req, res) => {
       mobile // add mobile number with each item
     }));
 
+    // Save to MongoDB
     await CartItem.insertMany(savedItems);
+
+    // WhatsApp Logic: Format and send message
+    const orderSummary = items.map(i => `${i.name} (Qty: ${i.quantity}) - ₹${i.price}`).join('\n');
+    const messageBody = `*New Order Received!*\n\n*Mobile:* ${mobile}\n*Items:*\n${orderSummary}`;
+
+    await client.messages.create({
+      body: messageBody,
+      from: 'whatsapp:+14155238886', // Twilio Sandbox Number
+      to: `whatsapp:+91${mobile}`    // Prepending +91 for Indian numbers
+    });
+
     res.status(200).send('Cart saved successfully!');
   } catch (err) {
     console.error(err);
