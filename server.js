@@ -1,14 +1,17 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs').promises; // Use Promise-based FS for async/await
 const path = require('path');
 const mongoose = require('mongoose');
+const twilio = require('twilio');
+
 const app = express();
 
 // Twilio Configuration from userController.js
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
-const twilio = require('twilio');
+
 const client = twilio(accountSid, authToken);
 
 // Middleware
