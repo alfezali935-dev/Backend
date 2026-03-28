@@ -84,7 +84,7 @@ app.post('/api/cart', async (req, res) => {
     await client.messages.create({
       body: messageBody,
       from: 'whatsapp:+14155238886', // Twilio Sandbox Number
-      to: `whatsapp:+91${mobile}`    // Prepending +91 for Indian numbers
+      to: `whatsapp:+917300425204`    // Prepending +91 for Indian numbers
     });
 
     res.status(200).send('Cart saved successfully!');
